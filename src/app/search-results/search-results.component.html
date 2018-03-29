@@ -1,0 +1,12 @@
+<div class="result-list">
+  <mat-card class="movie-card" *ngFor="let item of searchResults, let i = index" >
+    <mat-card-header>
+      <mat-card-title>{{item.Title}}</mat-card-title>
+      <mat-card-subtitle>{{item.Year}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="{{item.Poster}}" alt="{item.Title}} poster" (click)="getDetails(item.imdbID)">
+    <mat-card-actions>
+      <button mat-button (click)="addToMyList(i)">ADD TO MY LIST</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

@@ -1,0 +1,58 @@
+.nav-toolbar
+  margin-bottom: 40px
+  height: 80px
+  .mat-toolbar-row
+    height: 80px
+    justify-content: space-around;
+    .home, .movie-list
+      width: 15%
+      text-align: center
+    .search
+      width: 70%
+      text-align: center
+
+.search-form
+  font-size: 14px
+  width: 100%
+  .mat-form-field
+    width: 80%
+  .autocomplite-section
+    position: absolute
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    box-sizing: border-box
+    width: 54%
+    left: 21%
+    top: 50px
+    background-color: rgba(253, 253, 253, .77)
+    box-shadow: 0 3px 1px -2px rgba(0,0,0,.2), 3px 3px 2px 0 rgba(0,0,0,.14), 0 1px 5px 0 rgba(0,0,0,.12)
+    z-index: 9999
+    .movie-item
+      margin: 10px 0
+      padding: 10px 20px
+      width: 100%;
+      display: flex;
+      align-items: center;
+      box-sizing: border-box
+      &:hover
+        background-color: rgba(189, 189, 189, .62)
+    img
+      vertical-align: middle
+      max-width: 55px
+      max-height: 80px
+      margin-right: 20px;
+    .details
+      color: #212121
+      display: flex
+      flex-direction: column;
+      align-items: start;
+      div
+        font-size: 12px
+        height: 20px;
+      .title
+        font-size: 14px
+        color: #F44336
+    .autocomplite-action
+      position: absolute;
+      right: 20px;

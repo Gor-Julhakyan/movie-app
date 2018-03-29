@@ -1,0 +1,17 @@
+<div class="heading">
+  <div class="poster">
+    <img mat-card-image src="{{movieDetails.Poster}}" alt="">
+  </div>
+  <div class="details">
+    <mat-list>
+      <span *ngFor="let key of movieDetails | objKeys">
+        <mat-list-item *ngIf="key !== 'Ratings' && key !== 'Poster' && key !== 'imdbID' && key !== 'Response'">
+          <div mat-line>
+              <span>{{key}} : </span>
+              <span>{{movieDetails[key]}}</span>
+          </div>
+        </mat-list-item>
+      </span>
+    </mat-list>
+  </div>
+</div>
